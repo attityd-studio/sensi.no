@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [sitemap(), aiRobotsTxt()],
   env: {
     schema: {
-      SITE_NAME: envField.string({ context: "server", access: "public", default: "Sensi" }),
+      SITE_NAME: envField.string({ context: "client", access: "public", default: "Sensi" }),
     }
   }
 });
