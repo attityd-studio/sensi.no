@@ -1,19 +1,18 @@
 ---
-import { SITE_NAME } from "astro:env/client";
-
+const SITE_NAME = 'Sensi';
 const startYear = 2025;
 const currentYear = new Date().getFullYear();
 ---
 
 <sensi-copyright start-year="2025" current-year={currentYear.toString()}>
-  <small slot="fallback">
-    {currentYear > startYear ? `Opphavsrett © ${SITE_NAME}, <time datetime="${startYear}">${startYear}</time>&hairsp;&ndash;&hairsp;<time datetime="${currentYear}">${currentYear}</time>.` : `Opphavsrett © ${SITE_NAME}, <time datetime="${startYear}">${startYear}</time>.`}
-    Ta kontakt om du vil bruke innhold fra denne siden.
+  <small slot="fallback" set:html={currentYear > startYear
+    ? `Opphavsrett © ${SITE_NAME}, <time datetime="${startYear}">${startYear}</time>&hairsp;&ndash;&hairsp;<time datetime="${currentYear}">${currentYear}</time>. Ta kontakt om du vil bruke innhold fra denne siden.`
+    : `Opphavsrett © ${SITE_NAME}, <time datetime="${startYear}">${startYear}</time>. Ta kontakt om du vil bruke innhold fra denne siden.`}>
   </small>
 </sensi-copyright>
 
 <script>
-  import { SITE_NAME } from "astro:env/client";
+  const SITE_NAME = 'Sensi';
 
   customElements.define('sensi-copyright', class extends HTMLElement {
     constructor() {
