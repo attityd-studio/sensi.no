@@ -1,4 +1,4 @@
-# Vilkår for bruk og Personvern
+# Vilkår for bruk og personvern
 
 Sist oppdatert: 30. mars 2025
 

@@ -1,0 +1,9 @@
+@layer reset, app;
+
+@import url('reset.css') reset;
+
+@layer app {
+  body {
+    font-family: sans-serif;
+  }
+}

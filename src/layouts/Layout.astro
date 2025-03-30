@@ -1,7 +1,8 @@
 ---
 import { SITE_NAME } from "astro:env/client";
 
-import Copyright from "@/components/Copyright.astro";
+import '@/styles/app.css';
+import Colophon from "@/components/Colophon.astro";
 
 const { title, description } = Astro.props;
 const pathname = Astro.url.pathname;
@@ -20,9 +21,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="canonical" href={canonicalURL} />
 	</head>
 	<body>
-		<slot />
+    <slot />
     <footer>
-      <Copyright />
+      <Colophon />
     </footer>
 	</body>
 </html>
