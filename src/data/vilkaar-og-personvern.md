@@ -1,6 +1,6 @@
 # Vilkår for bruk og Personvern
 
-Sist oppdatert: 29. mars 2025
+Sist oppdatert: 30. mars 2025
 
 ## 1. Introduksjon
 Denne nettsiden eies og drives av Sensi. Ved å bruke denne nettsiden godtar du disse vilkårene for bruk og vår personvernpolitikk.
@@ -18,4 +18,4 @@ Vi samler kun inn informasjon som er nødvendig for å forbedre brukeropplevelse
 Denne nettsiden leveres «som den er», uten garantier av noe slag. Sensi er ikke ansvarlig for eventuelle skader som følge av bruk av denne nettsiden.
 
 ## 6. Kontakt
-For spørsmål eller forespørsler om kommersiell bruk av innholdet, vennligst kontakt oss på [elise@sensi.no](mailto:elise@sensi.no) eller gjennom vårt [kontaktskjema](/kontakt).
+For spørsmål eller forespørsler om kommersiell bruk av innholdet, vennligst kontakt oss på [pedagogene@sensi.no](mailto:pedagogene@sensi.no) eller gjennom vårt [kontaktskjema](/kontakt).
