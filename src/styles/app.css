@@ -3,9 +3,6 @@
 @import url('reset.css') reset;
 
 @layer app {
-    :root {
-        color-scheme: light dark;
-    }
   body {
     font-family: sans-serif;
   }
