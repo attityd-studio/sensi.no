@@ -19,6 +19,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<title>{pathname === '/' ? SITE_NAME : title + ' | ' + SITE_NAME }</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+		<meta name="color-scheme" content="light dark" />
 	</head>
 	<body>
     <slot />
