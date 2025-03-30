@@ -1,3 +1,12 @@
+---
+import { SITE_NAME } from "astro:env/server";
+
+const { title, description } = Astro.props;
+const pathname = Astro.url.pathname;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+console.log('Canonical URL:', canonicalURL.toString());
+---
+
 <!doctype html>
 <html lang="nb-NO">
 	<head>
@@ -5,7 +14,9 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Sensi</title>
+		<title>{pathname === '/' ? SITE_NAME : title + ' | ' + SITE_NAME }</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
 	</head>
 	<body>
 		<slot />
